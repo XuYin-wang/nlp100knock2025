@@ -1,3 +1,3 @@
-s = "stresssed"
-for i in reversed(range(len(s))):
-   print(s[i], end="")
+s = "stressed"
+reversed_s = s[::-1]
+print(reversed_s)
