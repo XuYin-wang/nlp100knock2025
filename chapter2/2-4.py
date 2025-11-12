@@ -12,3 +12,5 @@ with open('popular-names.txt', 'r') as f:
         # split('\t')でタブ区切りに分割し、インデックス0で1列目を取得する
         # printで取得した1列目を出力する
         print("各行の1列目だけを抜き出して表示:", line.split('\t')[0])
+
+#実行確認$ head -n 10 popular-names.txt | cut -f1
