@@ -11,3 +11,5 @@ with open ('popular-names.txt', 'r') as f:
     for line in lines[-N:]:
         # rstrip()で行末の改行を削除してから表示する
         print("ファイルの末尾N行だけを表示:", line.rstrip())
+
+#実行確認$ tail -n 10 popular-names.txt
