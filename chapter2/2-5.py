@@ -24,4 +24,5 @@ with open('popular-names.txt', 'r') as f:
             for line in lines[start_index:end_index]:
                 # 行を出力ファイルに書き込む
                 out_f.write(line)
-# これでpopular-names-part-1.txtからpopular-names-part-10.txtまでの10個のファイルが作成される
+                
+#実行確認$ split -n 10 popular-names.txt popular-names-part-
