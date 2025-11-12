@@ -10,3 +10,5 @@ lines.sort(key=lambda line: int(line.split('\t')[2]), reverse=True)
 # 並び替えた各行を順に出力する
 for line in lines:
     print(line.rstrip())    
+
+#実行確認$ sort -k3,3nr popular-names.txt
