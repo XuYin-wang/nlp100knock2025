@@ -18,3 +18,5 @@ for line in lines:
 
 # len()でセットの要素数（異なる1列目の文字列の種類数）を取得して出力する
 print("異なる1列目の文字列の種類数:", len(unique_first_column))
+
+#実行確認$ cut -f1 popular-names.txt | sort | uniq
