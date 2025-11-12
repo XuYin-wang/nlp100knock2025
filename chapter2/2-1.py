@@ -11,3 +11,5 @@ with open('popular-names.txt', 'r') as f:
     for line in lines[:N]:
         # rstrip()で行末の改行を削除してから表示する
         print("ファイルの先頭N行だけを表示:", line.rstrip())
+
+#実行確認$ head -n 10 popular-names.txt
