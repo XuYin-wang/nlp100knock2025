@@ -22,4 +22,4 @@ sorted_frequency = sorted(frequency_dict.items(), key=lambda x: x[1], reverse=Tr
 for name, freq in sorted_frequency:
     print(f"名前: {name}, 出現頻度: {freq}")
 
-#実行確認$ cut -f1 popular-names.txt | sort | uniq -c | sort -k1,1nr -k2,2
+#実行確認$ cut -f1 popular-names.txt | sort | uniq -c | sort -nr
