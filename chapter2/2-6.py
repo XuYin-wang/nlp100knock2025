@@ -16,3 +16,5 @@ random.shuffle(lines)
 with open('shuffled-popular-names.txt', 'w') as f:
     # writelines()でリスト内の全ての行を一度にファイルに書き込む
     f.writelines(lines)
+
+#実行確認$ shuf popular-names.txt > shuffled-popular-names.txt
