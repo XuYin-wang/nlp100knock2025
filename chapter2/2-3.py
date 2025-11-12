@@ -12,3 +12,6 @@ with open('popular-names.txt', 'r') as f:
         # replace()でタブ('\t')をスペース(' ')に置換する
         # printのend=''で既存の行末改行を重複させない
         print(line.replace('\t', ' '), end='')
+
+#実行確認$ head -n 10 popular-names.txt | sed 's/\t/ /g'
+#実行確認$ head -n 10 popular-names.txt | expand -t 1
