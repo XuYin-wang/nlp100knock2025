@@ -17,21 +17,17 @@ def get_image_url(image_title):
         "iiprop": "url",
         "format": "json"
     }
-
+    # ユーザーエージェントを設定
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15"
     }
-
+    # APIリクエスト
     r = requests.get(url, params=params, headers=headers, timeout=10)
-
-    # デバッグ用：返却内容確認
-    # print(r.text)
-
+    # JSONレスポンスを解析
     data = r.json()
-
     pages = data["query"]["pages"]
     page = next(iter(pages.values()))
-
+    # 画像URLを取得
     return page["imageinfo"][0]["url"]
 
 
